@@ -1,0 +1,88 @@
+.announcement-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 1rem;
+}
+
+.announcement-layout {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.45s ease-in-out;
+  width: 100%;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.announcement-card-container {
+  display: flex-shrink;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel-controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.announcement-button {
+  background: white;
+  border: 1px solid #d9d9d9;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.announcement-button:hover:not(:disabled) {
+  background: #f3f3f3;
+}
+
+.announcement-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.dot-indicators {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dot.active {
+  background: #333;
+  border-color: #333;
+}
